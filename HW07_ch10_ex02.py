@@ -5,3 +5,26 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+def capitalized_nested(nested_lsts):
+	cap_lists = [(item[0].upper() + item[1:]) for item in nested_lsts]
+	return cap_lists
+
+
+
+
+def main():
+	print(capitalized_nested(['apple', 'hello', 'aloha']))
+if __name__ == '__main__':
+	main()
+
+
+
+
+
+
+
+
+
+
+

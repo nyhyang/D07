@@ -6,3 +6,34 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+from itertools import accumulate
+
+def cumulative_sum(nested_lst):
+	# cumulative_lst = [itertools.accumulate(item) for item in nested_lst]
+	cumulative_lst = [list(accumulate(lst)) for lst in nested_lst]
+	return cumulative_lst
+
+
+	# cumulative_lst = []
+	# for lst in nested_lst:
+	# 	for item in lst:
+
+	# for item in nested_lst:
+	# 	cumulative_lst += itertools.accumulate(item)
+	# return cumulative_lst
+
+
+
+
+
+
+
+
+
+def main():
+	cumulative_sum(([1, 2, 4], [2, 3, 4]))
+
+if __name__ == '__main__':
+	main()
+
+
